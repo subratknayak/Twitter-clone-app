@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>twitter-user demos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://nutmeg.tools/favicon.png">
+
+  <script src="./node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js"></script>
+
+  <!-- Use `npm start` to start a development server. -->
+
+  <style>
+    body {
+      background-color: #fff;
+      padding: 24px;
+    }
+
+    twitter-user {
+      margin: 8px;
+    }
+  </style>
+</head>
+<body>
+  <twitter-user id="jack"></twitter-user>
+
+  <twitter-user id="abraham"></twitter-user>
+
+  <twitter-user id="interior"></twitter-user>
+
+  <twitter-user id="devbraham"></twitter-user>
+
+  <script>
+    fetch('test/jack.json')
+      .then(res => res.json())
+      .then(data => {
+        document.querySelector('#jack').user = data;
+      });
+    fetch('test/abraham.json')
+      .then(res => res.json())
+      .then(data => {
+        document.querySelector('#abraham').user = data;
+      });
+    fetch('test/interior.json')
+      .then(res => res.json())
+      .then(data => {
+        document.querySelector('#interior').user = data;
+      });
+    fetch('test/devbraham.json')
+      .then(res => res.json())
+      .then(data => {
+        document.querySelector('#devbraham').user = data;
+      });
+  </script>
+
+  <!-- In development `twitter-user.bundled.js` will automatically be loaded. -->
+</body>
+</html>
