@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abraham/twitter-user.git"
+    "url": "git+https://github.com/subratknayak/twitter-user.git"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abraham/twitter-user/issues"
+    "url": "https://github.com/subratknayak/twitter-user/issues"
   },
-  "homepage": "https://github.com/abraham/twitter-user",
+  "homepage": "https://github.com/subratknayak/twitter-user",
   "scripts": {
     "build": "npx nutmeg build .",
     "prebuild": "npx nutmeg clean .",
